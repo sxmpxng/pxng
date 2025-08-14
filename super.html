@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Elements - Phantom by HTML5 UP</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0; /* ลบ padding ออกเพื่อให้ content ชิดขอบ */
+                background-color: #f7f7f7;
+            }
+
+            .product-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px; /* เพิ่ม padding ใน container แทน */
+            }
+
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                justify-items: center;
+            }
+
+            .product-card {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.2s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .product-card img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 4px;
+                margin-bottom: 15px;
+            }
+
+            .product-card h3 {
+                font-size: 18px;
+                margin: 10px 0;
+                color: #333333;
+                flex-grow: 1;
+            }
+
+            .star-rating {
+                color: #ffcc00;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            
+            .price {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #e44d26;
+                margin: 10px 0;
+            }
+
+            .buy-button {
+                background-color: #ffcc00;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+                align-self: center;
+                margin-top: 15px;
+            }
+
+            /* แก้ไขการจัดวางโลโก้ */
+            #header .logo {
+                display: flex;
+                align-items: center;
+            }
+
+            #header .logo img {
+                width: 40px; /* ปรับขนาดโลโก้ตามต้องการ */
+                height: 40px;
+                margin-right: 10px; /* ระยะห่างระหว่างโลโก้กับชื่อ */
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+
+            <header id="header">
+                <div class="inner">
+                    <a href="index.html" class="logo">
+                        <span class="symbol"><img src="images/logo.jpeg" alt="" /></span>
+                        <span class="title">My Pet Guide</span>
+                    </a>
+<hr />
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="super.html">อาหารสุนัขโตและลูกสุนัข</a></li>
+                </ul>
+            </nav>
+
+            <div id="main">
+                <div class="product-container">
+                    <h1 style="text-align: center; color: #555;">ผลิตภัณฑ์สำหรับสุนัข</h1>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic1.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>เพดดิกรี อาหารสุนัขโต รสเนื้อวัวและผัก 10 กก.</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 300.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic2.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>เพดดิกรี® อาหารเม็ด สุนัขโตพันธุ์เล็ก รสตับย่าง</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 450.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic3.webp" alt="อาหารลูกสุนัข" />
+                                </span>
+                                <h3>Pedigree Puppy Wet Food in Pouch 12x130 G อาหารลูกสุนัข เพดดิกรี Chicken, Liver, Egg & Veggie ไก่ตับไข่บดพร้อมผัก</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 500.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic4.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>เพดดิกรีสุนัขโตไก่+ตับย่าง20กก.*1</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 350.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic5.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>เพดดิกรี เพาช์ อาหารสุนัขโต รสเนื้อวัวในซอสเกรวี่ 130 ก. 12 ซอง</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 700.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic6.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>เพดดิกรี อาหารสุนัขโต รสสตูเนื้อ แบบกระป๋อง 400 กรัม X 4 กระป๋อง</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 500.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic7.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>สมาร์ทฮาร์ท อาหารสุนัขโต รสเนื้ออบ 3กก.</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 490.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic8.webp" alt="อาหารลูกสุนัข" />
+                                </span>
+                                <h3>PEDIGREE อาหารลูกสุนัข สูตรอย่านม 1.3 กก.</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 690.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic9.webp" alt="อาหารลูกสุนัข" />
+                                </span>
+                                <h3>Pedigree เพดดิกรี ชนิดเม็ด สำหรับลูกสุนัข สายพันธ์ุเล็ก รสนม 1.3 kg.</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 799.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic10.webp" alt="อาหารลูกสุนัข" />
+                                </span>
+                                <h3>Pedigree Puppies Dog Food in Canned เพดดิกรีอาหารลูกสุนัข ขนิดกระป๋อง 6x700 G</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 699.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic11.webp" alt="อาหารแม่และลูกสุนัข" />
+                                </span>
+                                <h3>เพดดิกรี® อาหารเม็ด แม่และลูกสุนัข</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 399.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div>
+                                <span class="image">
+                                    <img src="images/pic12.webp" alt="อาหารสุนัขโต" />
+                                </span>
+                                <h3>PEDIGREE อาหารสุนัขโต รสเนื้อไก่ ผัก 10 กก.</h3>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="price">฿ 700.00</p>
+                                <button class="buy-button">สั่งซื้อ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<hr />
+            <footer id="footer">
+                <div class="inner">
+                    <section>
+                        <h2>ติดต่อสอบถาม</h2>
+                        <p>หากมีข้อสงสัยหรือต้องการสอบถามเพิ่มเติม สามารถติดต่อเราได้ตามช่องทางด้านล่าง</p>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                        </ul>
+                    </section>
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
